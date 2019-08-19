@@ -27,7 +27,7 @@ public class TwitterProducer {
 
     private final String consumerKey = "t9gGK6pKixgLc2yDEv8Bs0GLq";
     private final String consumerSecret = "o69dvGOZIcT0pHmNd8tAX2yvReTClpSeWVdni4q4VD5rG4A066";
-    private final String token = "1159096011337469952-3tz0a8UUYs57TAA9evwnL4Xtx9PQcr ";
+    private final String token = "1159096011337469952-3tz0a8UUYs57TAA9evwnL4Xtx9PQcr";
     private final String secret = "FKz9Oqa189MoEJWXF4l8pS7lJvkGeQNOROAocU1LSEtBy";
 
     private Logger logger = LoggerFactory.getLogger(TwitterProducer.class);
@@ -87,7 +87,7 @@ public class TwitterProducer {
         /** Declare the host you want to connect to, the endpoint, and authentication (basic auth or oauth) */
         Hosts hosebirdHosts = new HttpHosts(Constants.STREAM_HOST);
         StatusesFilterEndpoint hosebirdEndpoint = new StatusesFilterEndpoint();
-        List<String> terms = Lists.newArrayList("bitcoin");
+        List<String> terms = Lists.newArrayList("bitcoin", "politics");
         hosebirdEndpoint.trackTerms(terms);
 
         // These secrets should be read from a config file
